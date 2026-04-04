@@ -1,32 +1,9 @@
 import streamlit as st
 
-st.set_page_config(page_title="Flexible HEO Pechini Calculator", layout="wide")
+st.set_page_config(page_title="HEO Recipe Calculator", layout="wide")
 
-# --- CSS INJECTION FOR STYLING ---
-st.markdown(
-    """
-    <style>
-    /* Hide the up/down arrows (spinners) in number inputs */
-    input[type="number"]::-webkit-inner-spin-button, 
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
-    input[type="number"] {
-        -moz-appearance: textfield;
-    }
-    
-    /* INCREASE CHECKBOX TEXT SIZE */
-    div[data-testid="stCheckbox"] label span {
-        font-size: 1.3rem !important; 
-        font-weight: 600;             
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
-st.title("Flexible HEO Pechini Recipe Calculator")
+st.title("HEO Recipe Calculator")
 
 AVAILABLE_METALS = {
     "Barium": 261.34,      
@@ -124,7 +101,7 @@ if st.session_state.metals_confirmed:
     st.write(f"**Total Stoichiometric Fraction:** {total_fraction:.3f}")
 
     # Slightly widened tolerance (0.01) to account for fractions like 1/3 (0.333 + 0.333 + 0.333 = 0.999)
-    if abs(total_fraction - 1.0) > 0.01:
+    if abs(total_fraction - 1.0) > 0.001:
         st.error("The sum of stoichiometric fractions must equal 1.0!")
     else:
         st.success("Fractions sum to 1.0. Ready to calculate.")
