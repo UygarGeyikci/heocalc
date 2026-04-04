@@ -66,7 +66,7 @@ with col1:
 with col2:
     acry_ratio = st.number_input("Acrylamide : Total Metal Ratio", value=9.0, format="%.1f", step=0.1)
 with col3:
-    citric_ratio = st.number_input("Citric Acid : Total Metal Ratio", value=3.0, format="%.1f", step=0.1)
+    citric_ratio = st.number_input("Citric Acid : Total Metal Ratio", value=4.5, format="%.1f", step=0.1)
 
 st.divider()
 
