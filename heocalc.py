@@ -64,9 +64,9 @@ col1, col2, col3 = st.columns(3)
 with col1:
     target_mols = st.number_input("Target Total Moles of HEO", value=0.1, format="%.2f")
 with col2:
-    acry_ratio = st.number_input("Acrylamide : Total Metal Ratio", value=9.0, format="%.1f", step=0.1)
+    acry_ratio = st.number_input("Acrylamide : Total Metal Ratio", value=4.5, format="%.1f", step=0.1)
 with col3:
-    citric_ratio = st.number_input("Citric Acid : Total Metal Ratio", value=4.5, format="%.1f", step=0.1)
+    citric_ratio = st.number_input("Citric Acid : Total Metal Ratio", value=1.5, format="%.1f", step=0.1)
 
 st.divider()
 
