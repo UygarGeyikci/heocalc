@@ -42,7 +42,7 @@ AVAILABLE_METALS = {
     "Neodymium": 438.35,   
     "Nickel": 290.79,      
     "Praseodymium": 435.01,
-    "Strontium": 211.63    
+    "Strontium": 211.63,    
     "Yttrium": 364.99,     
     "Zinc": 297.49,        
 }    
