@@ -29,23 +29,23 @@ st.markdown(
 st.title("Flexible HEO Pechini Recipe Calculator")
 
 AVAILABLE_METALS = {
-    "Nickel": 290.79,      
-    "Lanthanum": 433.01,   
-    "Cobalt": 291.03,      
-    "Chromium": 400.15,    
-    "Magnesium": 256.41,   
-    "Calcium": 236.15,     
-    "Copper": 241.60,      
-    "Manganese": 251.01,   
-    "Cerium": 434.22,      
-    "Iron": 404.00,        
-    "Yttrium": 364.99,     
-    "Praseodymium": 435.01,
-    "Zinc": 297.49,        
-    "Neodymium": 438.35,   
     "Barium": 261.34,      
+    "Calcium": 236.15,     
+    "Cerium": 434.22,      
+    "Chromium": 400.15,    
+    "Cobalt": 291.03,      
+    "Copper": 241.60,      
+    "Iron": 404.00,        
+    "Lanthanum": 433.01,   
+    "Magnesium": 256.41,   
+    "Manganese": 251.01,   
+    "Neodymium": 438.35,   
+    "Nickel": 290.79,      
+    "Praseodymium": 435.01,
     "Strontium": 211.63    
-}
+    "Yttrium": 364.99,     
+    "Zinc": 297.49,        
+}    
 
 ACRYLAMIDE_MW = 71.08
 CITRIC_ACID_MONOHYDRATE_MW = 210.14
